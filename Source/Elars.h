@@ -29,14 +29,17 @@ SOFTWARE.
  *
  */
 
-#ifndef ELARS_H_
-#define ELARS_H_
+#pragma once
 
-#include"ConfidenceVector.h"
-#include"PerformanceMatrix.h"
-#include"Symbol.h"
-#include"Ensemble.h"
-#include"Alphabet.h"
-#include"BuildCV.h"
+#include "ConfidenceVector.h"
+#include "PerformanceMatrix.h"
+#include "Symbol.h"
+#include "Ensemble.h"
+#include "Alphabet.h"
+#include "BuildCV.h"
 
-#endif /* ELARS_H_ */
+#include <memory>
+
+#include "../Utility/easylogging++.h"
+
+

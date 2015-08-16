@@ -28,15 +28,15 @@ SOFTWARE.
  *
  */
 
-#ifndef CONFIDENCEVECTOR_H_
-#define CONFIDENCEVECTOR_H_
+#pragma once
 
-#include<string>
-#include<iostream>
-#include<opencv/cxcore.h>
-#include<opencv/cv.h>
-#include<opencv/cvaux.h>
-#include<opencv/highgui.h>
+#include <string>
+#include <iostream>
+#include <opencv/cxcore.h>
+#include <opencv/cv.h>
+#include <opencv/cvaux.h>
+#include <opencv/highgui.h>
+
 using namespace std;
 
 class ConfidenceVector{
@@ -60,4 +60,4 @@ private:
 
 ostream & operator<<(ostream & out, const ConfidenceVector & cv);
 
-#endif /* CONFIDENCEVECTOR_H_ */
+

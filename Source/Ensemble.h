@@ -28,13 +28,12 @@ SOFTWARE.
  *
  */
 
-#ifndef ENSEMBLE_H_
-#define ENSEMBLE_H_
+#pragma once
 
-#include<list>
-#include"ConfidenceVector.h"
-#include"Alphabet.h"
-#include"Symbol.h"
+#include <list>
+#include "ConfidenceVector.h"
+#include "Alphabet.h"
+#include "Symbol.h"
 
 class Ensemble{
 public:
@@ -50,5 +49,3 @@ private:
 	ConfidenceVector * choices;
 };
 
-
-#endif /* ENSEMBLE_H_ */

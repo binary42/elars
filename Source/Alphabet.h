@@ -26,13 +26,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#pragma once
 
-#ifndef ALPHABET_H_
-#define ALPHABET_H_
-
-#include<map>
-#include"Symbol.h"
-#include<iostream>
+#include <map>
+#include "Symbol.h"
+#include <iostream>
 
 class Alphabet {
 public:
@@ -51,4 +49,4 @@ private:
 
 ostream & operator<<(ostream & out, const Alphabet & alpha);
 
-#endif /* ALPHABET_H_ */
+

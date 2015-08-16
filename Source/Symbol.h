@@ -29,15 +29,15 @@ SOFTWARE.
  *
  */
 
-#ifndef SYMBOL_H_
-#define SYMBOL_H_
+#pragma once
 
-#include<string>
-#include<iostream>
-#include<opencv/cxcore.h>
-#include<opencv/cv.h>
-#include<opencv/cvaux.h>
-#include<opencv/highgui.h>
+#include <string>
+#include <iostream>
+#include <opencv/cxcore.h>
+#include <opencv/cv.h>
+#include <opencv/cvaux.h>
+#include <opencv/highgui.h>
+
 using namespace std;
 
 class Symbol{
@@ -63,4 +63,3 @@ bool operator==(const Symbol & lhs, const Symbol & rhs);
 
 ostream & operator<<(ostream & out, const Symbol & sym);
 
-#endif /* SYMBOL_H_ */

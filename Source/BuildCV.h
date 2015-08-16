@@ -28,11 +28,11 @@ SOFTWARE.
  *
  */
 
-#ifndef BUILDCV_H_
-#define BUILDCV_H_
-#include"ConfidenceVector.h"
-#include"PerformanceMatrix.h"
-#include"Alphabet.h"
+#pragma once
+
+#include "ConfidenceVector.h"
+#include "PerformanceMatrix.h"
+#include "Alphabet.h"
 
 class BuildCV{
 public:
@@ -47,4 +47,3 @@ private:
 	Alphabet * alpha;
 };
 
-#endif /* BUILDCV_H_ */
