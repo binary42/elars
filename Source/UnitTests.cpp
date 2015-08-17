@@ -28,8 +28,6 @@ bool UnitTest::TestSymbol( const Symbol &symbol )
 	LOG( INFO ) << "Symbol Data:";
 	symbol.print( std::cout );
 
-
-
 	return true;
 }
 
