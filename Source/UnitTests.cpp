@@ -33,30 +33,38 @@ bool UnitTest::TestSymbol( const Symbol &symbol )
 
 bool UnitTest::TestAlphabet( const Alphabet &alphabet )
 {
+	LOG( INFO ) << "Alphabet Data: ";
+	alphabet.print( std::cout );
 
 	return true;
 }
 
 bool UnitTest::TestPerormanceMatrix( const PerformanceMatrix &pm )
 {
+	LOG( INFO ) << "Performance Matrix Data: ";
+	pm.print( std::cout );
 
 	return true;
 }
 
 bool UnitTest::TestConfidenceVector( const ConfidenceVector &cv )
 {
+	LOG( INFO ) << "Confidence Vector Data: ";
+	cv.print( std::cout );
 
 	return true;
 }
 
 bool UnitTest::TestBuildCV( const BuildCV &builder )
 {
+	LOG( INFO ) << "Build CV Data: ";
 
 	return true;
 }
 
 bool UnitTest::TestEnsemble( const Ensemble &ensemble )
 {
+	LOG( INFO ) << "Ensemble Data: ";
 
 	return true;
 }
