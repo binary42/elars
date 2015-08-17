@@ -8,37 +8,56 @@
 #include <iostream>
 #include "Elars.h"
 
-bool TestSymbol( const Symbol &symbol )
+class UnitTest
+{
+public:
+	UnitTest();
+	virtual ~UnitTest();
+
+	bool TestSymbol( const Symbol &symbol );
+	bool TestAlphabet( const Alphabet &alphabet );
+	bool TestPerormanceMatrix( const PerformanceMatrix &pm );
+	bool TestConfidenceVector( const ConfidenceVector &cv );
+	bool TestBuildCV( const BuildCV &builder );
+	bool TestEnsemble( const Ensemble &ensemble );
+
+};
+
+bool UnitTest::TestSymbol( const Symbol &symbol )
+{
+	LOG( INFO ) << "Symbol Data:";
+	symbol.print( std::cout );
+
+
+
+	return true;
+}
+
+bool UnitTest::TestAlphabet( const Alphabet &alphabet )
 {
 
 	return true;
 }
 
-bool TestAlphabet( const Alphabet &alphabet )
+bool UnitTest::TestPerormanceMatrix( const PerformanceMatrix &pm )
 {
 
 	return true;
 }
 
-bool TestPerormanceMatrix( const PerformanceMatrix &pm )
+bool UnitTest::TestConfidenceVector( const ConfidenceVector &cv )
 {
 
 	return true;
 }
 
-bool TestConfidenceVector( const ConfidenceVector &cv )
+bool UnitTest::TestBuildCV( const BuildCV &builder )
 {
 
 	return true;
 }
 
-bool TestBuildCV( const BuildCV &builder )
-{
-
-	return true;
-}
-
-bool TestEnsemble( const Ensemble &ensemble )
+bool UnitTest::TestEnsemble( const Ensemble &ensemble )
 {
 
 	return true;
